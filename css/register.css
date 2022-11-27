@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.bck {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url(../images/slide3.jpeg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bck:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.174); */
+}
+
+.section {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 40px 32px;
+    width: 470px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.133);
+    border: 1px solid white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.section header {
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+
+form {
+    display: grid;
+    place-items: center;
+}
+
+.space {
+    margin-top: 22px;
+}
+
+.input-container {
+    width: 380px;
+    position: relative;
+    color: white;
+}
+
+.label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: white;
+}
+
+.text-input {
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    /* background: #272530; */
+    /* background: rgba(255, 255, 255, 0.133); */
+    background: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    outline: none;
+    transition: all 0.3s;
+    color: white
+}
+
+.label::before {
+    content: "";
+    height: 5px;
+    /* background: #272530; */
+    /* background: linear-gradient(90deg, #eef2f9, #f3edf8); */
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.text-input:focus {
+    border: 1px solid white;
+    /* border-top: none; */
+}
+
+.text-input:focus+.label,
+.filled {
+    top: -15px;
+    color: white;
+    font-size: 14px;
+}
+
+.text-input::placeholder {
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.3s;
+
+}
+
+.text-input:focus::placeholder {
+    opacity: 1;
+}
+
+.submit {
+    border-radius: 5rem;
+    border: 1px solid #29d9d5;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    border: none;
+    background: #29d9d5;
+
+}
+
+.submit input[type="submit"] {
+    background: transparent;
+    border: none;
+    color: #29d9d5;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 280px;
+    padding: 10px 0;
+    border-radius: 9px;
+}
+
+.submit input[type="submit"]:hover {
+    color: black;
+}
+
+
+.login {
+    color: white;
+    margin: 20px 0;
+}
