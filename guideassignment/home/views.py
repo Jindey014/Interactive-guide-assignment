@@ -20,6 +20,9 @@ def details(request):
 def guideList(request):
     return render(request, 'guideLIst.html')
 
+def guideDetails(request):
+    return render(request, 'guideDetails.html')
+
 # def about(request):
 #     return HttpResponse("this is aboutpage")
 
