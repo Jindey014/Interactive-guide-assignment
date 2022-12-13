@@ -5,6 +5,21 @@ def index(request):
     return render(request, 'index.html')
     # return HttpResponse("this is homepage")
 
+def login(request):
+    return render(request, 'login.html')
+
+def userRegister(request):
+    return render(request, 'userRegister.html')
+
+def guideRegister(request):
+    return render(request, 'guideRegister.html')
+
+def details(request):
+    return render(request, 'details.html')
+
+def guideList(request):
+    return render(request, 'guideLIst.html')
+
 # def about(request):
 #     return HttpResponse("this is aboutpage")
 

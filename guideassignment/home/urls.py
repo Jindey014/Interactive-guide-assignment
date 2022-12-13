@@ -4,9 +4,14 @@ from home import views
 
 urlpatterns = [
     path("", views.index, name='home'),
-    # path("about", views.about, name='about'),
-    # path("services", views.services, name='services'),
-    # path("gallery", views.gallery, name='gallery')
+    path("login", views.login, name='login'),
+    path("userRegister", views.userRegister, name='userRegister'),
+    path("guideRegister", views.guideRegister, name='guideRegister'),
+    path("details", views.details, name='details'),
+    path("guideList", views.guideList, name='guideLIst')
+
+
+
 
 
 ]

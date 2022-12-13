@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details of Places</title>
-    <link rel="stylesheet" href="./css/details.css">
+    {% load static %}
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+
     <script src="https://kit.fontawesome.com/3698113056.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -78,16 +81,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="./images/slide2.jpeg" alt="">
+                    <img src="{% static 'images/slide2.jpeg' %}" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/slide1.jpeg" alt="">
+                    <img src="{% static 'images/slide1.jpeg' %}" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/slide3.jpeg" alt="">
+                    <img src="{% static 'images/slide3.jpeg' %}" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/slide4.jpg" alt="">
+                    <img src="{% static 'images/slide4.jpeg' %}" alt="">
                 </div>
             </div>
             <!-- If we need pagination -->
