@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/about.css' %} ">
+    <script src="https://kit.fontawesome.com/3698113056.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/3698113056.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>Travel
+        </a>
+
+        <div class="navbar">
+            <ul class="links">
+                <li>
+
+                    <a data-aos="zoom-in-left" data-aos-delay="300" href="{% url 'index' %}">home</a>
+                </li>
+
+                <li>
+
+                    <a data-aos="zoom-in-left" data-aos-delay="450" href="{% url 'about' %}">about</a>
+                </li>
+                <li>
+
+                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#blogs">blogs</a>
+                </li>
+                <li>
+
+                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#chatbox">Chatbox</a>
+                </li>
+                <li>
+                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#">Login <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="{% url 'login' %}">Login as User</a></li>
+                            <li><a href="{% url 'guideLogin' %}">Login as Guide</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+
+        <div class="heading">
+            <h1> About Us</h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box" data-aos="fade-up" data-aos-delay="50">
+                <div class="image">
+                    <img src="{% static 'images/babina.jpg' %}" alt="photo" class="photo">
+                </div>
+                <div class="content">
+                    <h3>Babina Banjara</h3>
+                    <p>Backend Developer</p>
+                    <a href="https://www.facebook.com/babina.banjara.1" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/__babina_/?hl=en" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="50">
+                <div class="image">
+                    <img src="{% static 'images/jinish.jpg' %}" alt="photo" class="photo">
+                </div>
+                <div class="content">
+                    <h3>Jinish Shrestha</h3>
+                    <p>Frontend Developer</p>
+                    <a href="https://www.facebook.com/jinish.shrestha.5" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/shresthajns/?hl=en" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="50">
+                <div class="image">
+                    <img src="{% static 'images/jinu.jpg' %}" alt="photo" class="photo">
+                </div>
+                <div class="content">
+                    <h3>Jinu Nyachhyon</h3>
+                    <p>I guess</p>
+                    <a href="https://www.facebook.com/nyachhyonjinu" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/jinunyachhyon/?hl=en" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/reezan.jpg' %}" alt="photo" class="photo">
+                </div>
+                <div class="content">
+                    <h3>Rijan Timilsina</h3>
+                    <p>Handler</p>
+                    <a href="https://www.facebook.com/rijan.timilsina.9" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/reezantimilcena/?hl=en" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- about section ends -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteration: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
+
+</body>
+
+</html>

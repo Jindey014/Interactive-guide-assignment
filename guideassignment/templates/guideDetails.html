@@ -26,42 +26,35 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
-        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>Travel
         </a>
 
         <div class="navbar">
             <ul class="links">
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="300" href="{% url 'index' %}">home</a>
+                </li>
+
+                <li>
+
+                    <a data-aos="zoom-in-left" data-aos-delay="450" href="{% url 'about' %}">about</a>
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="450" href="#destination">destination</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#blogs">blogs</a>
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#gallery">gallery</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#chatbox">Chatbox</a>
                 </li>
                 <li>
-
-                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#about">about</a>
-                </li>
-                <li>
-
-                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#blogs">blogs</a>
-                </li>
-                <li>
-
-                    <a data-aos="zoom-in-left" data-aos-delay="1150" href="#chatbox">Chatbox</a>
-                </li>
-                <li>
-                    <a data-aos="zoom-in-left" data-aos-delay="1300" href="#">Login <i
+                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#">Login <i
                             class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown_menu">
                         <ul>
-                            <li><a href="#">Login as User</a></li>
-                            <li><a href="#">Login as Guide</a></li>
+                            <li><a href="{% url 'login' %}">Login as User</a></li>
+                            <li><a href="{% url 'guideLogin' %}">Login as Guide</a></li>
                         </ul>
                     </div>
                 </li>

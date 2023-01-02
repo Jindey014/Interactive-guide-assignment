@@ -44,7 +44,7 @@
             <ul class="links">
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="300" href="{% url 'index' %}">home</a>
                 </li>
                 <li>
 
@@ -56,7 +56,7 @@
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#about">about</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="750" href="{% url 'about' %}">about</a>
                 </li>
                 <li>
 
@@ -72,7 +72,7 @@
                     <div class="dropdown_menu">
                         <ul>
                             <li><a href="{% url 'login' %}">Login as User</a></li>
-                            <li><a href="{% url 'login' %}">Login as Guide</a></li>
+                            <li><a href="{% url 'guideLogin' %}">Login as Guide</a></li>
                         </ul>
                     </div>
                 </li>
@@ -364,7 +364,7 @@
 
     <!-- about section starts  -->
 
-    <section class="about" id="about">
+    <!-- <section class="about" id="about">
 
         <div class="heading">
             <span>Introductions</span>
@@ -430,13 +430,13 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- review section ends -->
 
     <!-- blogs section starts  -->
 
-    <section class="blogs" id="blogs">
+    <!-- <section class="blogs" id="blogs">
 
         <div class="heading">
             <span>blogs & posts</span>
@@ -489,7 +489,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- blogs section ends -->
 
