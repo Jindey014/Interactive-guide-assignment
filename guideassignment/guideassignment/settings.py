@@ -130,4 +130,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
 
+<<<<<<< HEAD
 # MEDIA_ROOT = BASE_DIR/'static/images'
+=======
+# MEDIA_ROOT = BASE_DIR / 'static/images'
+>>>>>>> 639b079f1f20f4a9e00801162b5291c867fe3167
