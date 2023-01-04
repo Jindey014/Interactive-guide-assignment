@@ -39,5 +39,9 @@ def guideLogin(request):
 def about(request):
     return render(request, 'about.html')
 
+
+def map(request):
+    return render(request, 'map.html')
+
 # def gallery(request):
 #     return render(request, 'gallery.html')

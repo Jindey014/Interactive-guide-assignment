@@ -60,7 +60,7 @@
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#blogs">blogs</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="900" href="{% url 'map' %}">maps</a>
                 </li>
                 <li>
 
@@ -303,7 +303,7 @@
         <div class="box-container">
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-                <img src="{% static 'images/Dhulikhel.jpg' %}" alt="">
+                <img src="{% static 'images/Thimi.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Dhulikhel</h3>
             </div>
@@ -502,7 +502,7 @@
             <h3>Let's Explore Nepal</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum praesentium amet quibusdam quam
                 officia suscipit odio.</p>
-            <a href="#home" class="btn">Find Your Guides</a>
+            <a href="{% url 'guideLIst' %}" class="btn">Find Your Guides</a>
         </div>
 
     </div>

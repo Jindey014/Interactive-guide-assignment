@@ -12,7 +12,9 @@ urlpatterns = [
     path("guideList", views.guideList, name='guideLIst'),
     path("guideDetails", views.guideDetails, name='guideDetails'),
     path("guideLogin", views.guideLogin, name='guideLogin'),
-    path("about", views.about, name='about')
+    path("about", views.about, name='about'),
+    path("map", views.map, name='map')
+
 
 
 
