@@ -56,16 +56,21 @@
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="1150" href="#chatbox">Chatbox</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="1150" href="{% url 'chatbox' %}">Chatbox</a>
                 </li>
                 <li>
+                    {% if request.user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
                     <a data-aos="zoom-in-left" data-aos-delay="1300" href="#">Login <i
                             class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown_menu">
                         <ul>
                             <li><a href="{% url 'login' %}">Login as User</a></li>
                             <li><a href="{% url 'guideLogin' %}">Login as Guide</a></li>
+                            
                         </ul>
+                    {% endif %}
                     </div>
                 </li>
             </ul>
@@ -473,7 +478,7 @@
             <h3>Let's Explore Nepal</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum praesentium amet quibusdam quam
                 officia suscipit odio.</p>
-            <a href="#home" class="btn">Find Your Guides</a>
+            <a href="{% url 'guideLIst' %}" class="btn">Find Your Guides</a>
         </div>
 
     </div>
@@ -527,8 +532,8 @@
 
     </section>
 
-    <div class="credit">created by <span>Me ,Jinish Shrestha <i class="fa-solid fa-face-grin-hearts"></i></span> | all
-        rights reserved!</div>
+    <div class="credit">Created by <span> Team </span> | Copyright &copy; 2022 All rights reserved.</div>
+
 
     <!-- footer section ends -->
 
