@@ -48,19 +48,11 @@
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="450" href="#destination">destination</a>
-                </li>
-                <li>
-
-                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#gallery">gallery</a>
-                </li>
-                <li>
-
                     <a data-aos="zoom-in-left" data-aos-delay="750" href="{% url 'about' %}">about</a>
                 </li>
                 <li>
 
-                    <a data-aos="zoom-in-left" data-aos-delay="900" href="{% url 'map' %}">maps</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="900" href="{% url 'map' %}">map</a>
                 </li>
                 <li>
 
@@ -112,10 +104,10 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="{% static 'images/slide2.jpeg' %}" alt="">
+                        <img src="{% static 'places/Chabahil_Stupa.jpg' %}" alt="">
                         <div class="layer">
-                            <h3>Title One</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam
+                            <h3>Chabahil Stupa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliqua
                                 veritatis
                                 exercitationem non ipsam et perferendis, assumenda doloribus nam quos! Velit
                                 blanditiis
@@ -128,9 +120,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="{% static 'images/slide1.jpeg' %}" alt="">
+                        <img src="{% static 'places/Changunarayan_Temple.jpg' %}" alt="">
                         <div class="layer">
-                            <h3>Title Two</h3>
+                            <h3>Changunarayan Temple</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam
                                 veritatis
                                 exercitationem non ipsam et
@@ -143,9 +135,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="{% static 'images/slide3.jpeg' %}" alt="">
+                        <img src="{% static 'places/Freak_Street.jpg' %}" alt="">
                         <div class="layer">
-                            <h3>Title Three</h3>
+                            <h3>Freak Street</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam
                                 veritatis
                                 exercitationem non ipsam et
@@ -158,9 +150,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="{% static 'images/slide4.jpg' %}" alt="">
+                        <img src="{% static 'places/Narayanhiti_Palace.jpg' %}" alt="">
                         <div class="layer">
-                            <h3>Title Four</h3>
+                            <h3>Narayanhiti Palace</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia nisi aliquam
                                 veritatis
                                 exercitationem non ipsam et
@@ -199,7 +191,7 @@
 
             <div class="box" data-aos="fade-up" data-aos-delay="150">
                 <div class="image">
-                    <img src="{% static 'images/Bhaktapur Durbar Square.jpg' %}" alt="">
+                    <img src="{% static 'places/Bhaktapur_Durbar_Square.jpg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Bhaktapur Durbar Square</h3>
@@ -210,7 +202,7 @@
 
             <div class="box" data-aos="fade-up" data-aos-delay="300">
                 <div class="image">
-                    <img src="{% static 'images/Boudhanath Stupa.jpg' %}" alt="">
+                    <img src="{% static 'places/Boudhanath_Stupa.jpg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Boudhanath Stupa</h3>
@@ -221,7 +213,7 @@
 
             <div class="box" data-aos="fade-up" data-aos-delay="450">
                 <div class="image">
-                    <img src="{% static 'images/Budhanilkantha Temple.jpg' %}" alt="">
+                    <img src="{% static 'places/Budhanilkantha_Temple.jpg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Budhanilkantha Temple</h3>
@@ -232,18 +224,7 @@
 
             <div class="box" data-aos="fade-up" data-aos-delay="600">
                 <div class="image">
-                    <img src="{% static 'images/Chabahil Stupa.jpg' %}" alt="">
-                </div>
-                <div class="content">
-                    <h3>Chabahil Stupa</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    <a href="{% url 'details' %}">read more <i class="fas fa-angle-right"></i></a>
-                </div>
-            </div>
-
-            <div class="box" data-aos="fade-up" data-aos-delay="750">
-                <div class="image">
-                    <img src="{% static 'images/Kathmandu Durbar Square.jpeg' %}" alt="">
+                    <img src="{% static 'places/Kathmandu_Durbar_Square.jpeg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Kathmandu Durbar Square</h3>
@@ -252,20 +233,9 @@
                 </div>
             </div>
 
-            <div class="box" data-aos="fade-up" data-aos-delay="900">
+            <div class="box" data-aos="fade-up" data-aos-delay="750">
                 <div class="image">
-                    <img src="{% static 'images/Namo Buddha.jpg' %}" alt="">
-                </div>
-                <div class="content">
-                    <h3>Namo Buddha</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    <a href="{% url 'details' %}">read more <i class="fas fa-angle-right"></i></a>
-                </div>
-            </div>
-
-            <div class="box" data-aos="fade-up" data-aos-delay="1050">
-                <div class="image">
-                    <img src="{% static 'images/pashupatinath.jpg' %}" alt="">
+                    <img src="{% static 'places/Pashupatinath_Temple.jpg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Pashupatinath Temple</h3>
@@ -274,9 +244,9 @@
                 </div>
             </div>
 
-            <div class="box" data-aos="fade-up" data-aos-delay="1200">
+            <div class="box" data-aos="fade-up" data-aos-delay="900">
                 <div class="image">
-                    <img src="{% static 'images/swayambhunath stupa.jpg' %}" alt="">
+                    <img src="{% static 'places/swayambhunath_stupa.jpg' %}" alt="">
                 </div>
                 <div class="content">
                     <h3>Swayambhunath Stupa</h3>
@@ -288,6 +258,7 @@
         </div>
 
     </section>
+
 
     <!-- destination section ends -->
 
@@ -303,55 +274,55 @@
         <div class="box-container">
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-                <img src="{% static 'images/Thimi.jpg' %}" alt="">
+                <img src="{% static 'places/Dhulikhel.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Dhulikhel</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-                <img src="{% static 'images/Bhundole.jpg' %}" alt="">
+                <img src="{% static 'places/Bhundole.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Bhundole</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-                <img src="{% static 'images/Bishnudwar.jpg' %}" alt="">
+                <img src="{% static 'places/Bishnudwar.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Bishnudwar</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-                <img src="{% static 'images/Dadagaun.jpg' %}" alt="">
+                <img src="{% static 'places/Dadagaun.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Dadagaun</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-                <img src="{% static 'images/Godavari.jpg' %}" alt="">
+                <img src="{% static 'places/Godavari.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Godavari</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-                <img src="{% static 'images/Garden of Dreams.jpeg' %}" alt="">
+                <img src="{% static 'places/Garden_of_Dreams.jpeg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Garden of Dreams</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-                <img src="{% static 'images/Kakani.jpg' %}" alt="">
+                <img src="{% static 'places/Kakani.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Kakani</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-                <img src="{% static 'images/Sundarijal.jpg' %}" alt="">
+                <img src="{% static 'places/Sundarijal.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Sundarijal</h3>
             </div>
 
             <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-                <img src="{% static 'images/Tinthana Suspension Bridge.jpg' %}" alt="">
+                <img src="{% static 'places/Tinthana_Suspension_Bridge.jpg' %}" alt="">
                 <span>travel spot</span>
                 <h3>Tinthana Suspension Bridge</h3>
             </div>
@@ -502,7 +473,7 @@
             <h3>Let's Explore Nepal</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum praesentium amet quibusdam quam
                 officia suscipit odio.</p>
-            <a href="{% url 'guideLIst' %}" class="btn">Find Your Guides</a>
+            <a href="#home" class="btn">Find Your Guides</a>
         </div>
 
     </div>

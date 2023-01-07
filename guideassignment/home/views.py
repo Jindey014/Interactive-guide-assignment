@@ -43,5 +43,6 @@ def about(request):
 def map(request):
     return render(request, 'map.html')
 
+
 # def gallery(request):
 #     return render(request, 'gallery.html')
