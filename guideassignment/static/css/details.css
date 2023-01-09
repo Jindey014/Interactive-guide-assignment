@@ -183,83 +183,27 @@ li .dropdown_menu ul li a {
     margin: 0 auto;
     margin-top: 9rem;
     width: 90%;
-    border-radius: 1rem;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat; */
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url(../images/home-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    min-height: 80vh;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+
+}
+
+.placeContainer {
+    display: flex;
     justify-content: space-between;
-    padding-bottom: 5rem;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-    flex-basis: 45%;
-}
-
-.swiper-slide {
-    border-radius: 9px;
-    overflow: hidden;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all .25s ease;
-    backface-visibility: hidden;
-    position: relative;
 }
 
-.swiper-slide:hover {
-    transform: scale(.9);
+.placeContainer img {
+    width: 350px;
+    height: 350px;
+    flex-basis: 45%;
+    border-radius: 15px;
 }
 
-.swiper-slide:hover .layer p {
-    margin-bottom: 0px;
-    opacity: 1;
-}
-
-.swiper-slide:hover img {
-    transform: scale(1.25);
-}
-
-.swiper-slide:after {
-    width: 100%;
-    content: '';
-    left: 0px;
-    bottom: 0px;
-    height: 150px;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1));
-    z-index: 20;
-    transition: all .25s ease;
-}
-
-
-.swiper-slide img {
-    width: 100%;
-    height: 320px;
-    z-index: 10;
-    transition: all .25s ease;
-}
-
-.swiper .swiper-pagination-bullet-active {
-    background: #29d9d5;
-}
 
 .info {
-    color: white;
     flex-basis: 47%;
+    color: white;
     align-items: none;
 }
 
